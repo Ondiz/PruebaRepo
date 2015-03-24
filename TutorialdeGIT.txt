@@ -26,7 +26,7 @@ Primero hay que decirle a Git quien eres:
 - Se puede guardar todo en un repositorio online como GitHub o Gitorious. Para añadir: git remote add nombre_repositorio URL_repositorio
 - Para mandar los cambios al repositorio online: git push -u nombre_repositorio nombre_rama (-u sirve para recordar los parámetros, nombre_rama debe ser master a no ser que haya ramas nuevas) git push sin más sube todos los cambios
 - Para recuperar los cambios: git pull nombre_repositorio nombre_rama
-- Para ver que cambios ha habido desde el último commit: git diff HEAD (HEAD es un puntero que refiere al último commit)
+- Para ver qué cambios ha habido desde el último commit: git diff HEAD (HEAD es un puntero que refiere al último commit)
 - Para quitar archivos de los que se registran los cambios: git reset nombre_archivo
 - Dejar las cosas como estaban en el último commit: git checkout nombre_archivo
 (Para volver al estado que te interese: git checkout número_hash El número hash puede verse al hacer git log, solo son necesarias las 7 primeras cifras. En este momento se abre una nueva rama para que puedas hurgar, pero no se modifica nada en principio. Para volver al último estado git checkout master (vuelve a la rama master))
