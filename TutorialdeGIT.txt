@@ -15,7 +15,7 @@ Git se usa desde la consola :)
 
 Primero hay que decirle a Git quien eres:
 - Email: git config --global user.email “email”
-- Nombre: git config --global user.email “nombre”
+- Nombre: git config --global user.name “nombre”
 
 
 - Para inicializar: git init. Se crea un repositorio vacío en /.git/ 
