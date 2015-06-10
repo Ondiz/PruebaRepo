@@ -12,11 +12,9 @@ Git es un software de control de versiones, es decir, permite gestionar los camb
 
 Git se usa desde la consola
 
-
 - Primero hay que decirle a Git quien eres:
 	- Email: git config `--global user.email “email”`
 	- Nombre: git config `--global user.name “nombre”`
-
 
 - Para inicializar: `git init`. Se crea un repositorio vacío en */.git/* 
 - Para ver el estado del repositorio: `git status`. Dirá si se ha realizado algún cambio a los archivos que se siguen
