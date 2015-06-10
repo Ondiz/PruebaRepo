@@ -37,15 +37,13 @@ Git se usa desde la consola
 - Para deshacer un commit: `git revert HEAD` (o el hash del commit que haya que anular). Esto eliminará el commit pero no lo quitará del log, para eso hay que resetear a antes del commit malo: `git reset --hard etiqueta_de_versión`. Aunque se haga esto los commits no desaparecen si están etiquetados, con `git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short master --all` pueden verse. La etiqueta puede quitarse con: `git tag -d etiqueta_de_versión`
 - Se pueden corregir commits con `git commit --amend -m “Nuevo comentario”`
 - Para cambiar de carpeta: `git mv archivo carpeta`. Esto elimina el crea el archivo dentro de la carpeta y elimina el de fuera. Si se hace mv fuera de git hay que eliminar el archivo a mano. Igual para renombrar archivos
-- Se puede cambiar el archivo .gitconfig para generar aliases. Habría que añadirle:
+- Se puede cambiar el archivo .gitconfig para generar aliases. Habría que añadirle para que ejecute toda la frase como `git hist`:
 
 ```
 [alias]
 hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --   date=short 
 ```
-
-    Y ahora con escribir `git hist` ejecuta toda la frase
-
+- Se puede hacer lo mismo desde la consola con `git config --global alias.hist 'log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short'`
 - Se pueden clonar repositorios con `git clone repositorio_a_clonar nombre_repositorio_clonado`. Se puede ver de donde proviene este repositorio con `git remote` y `git remote show nombre_que_devuelve` (será `origin` seguramente). 
 - Si se realizan cambios en el repositorio original, pueden recuperarse en el clon con `git fetch` y luego `git merge origin/master` o el equivalente que es `git pull`
 
