@@ -5,3 +5,4 @@ Learning Git and GitHub
 - [X] Learn basic Git commands
 - [X] Read Scott Chacon's Pro Git
 - [X] Learn GitHub flavoured Markdown
+- [ ] Add notes from Pro Git to tutorial
